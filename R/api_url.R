@@ -1,3 +1,3 @@
 local_url <- function() {
-  'http://localhost:8123'
+  'http://localhost:8123/api'
 }
