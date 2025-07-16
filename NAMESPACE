@@ -3,6 +3,7 @@
 export(ha_api)
 export(ha_api_config)
 export(ha_api_events)
+export(ha_api_services)
 export(ha_get_key)
 export(ha_has_key)
 export(ha_set_key)
