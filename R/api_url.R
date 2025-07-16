@@ -1,6 +1,6 @@
 api_url <- function(local = TRUE, ip = NULL) {
   if (local) {
-    'http://localhost:8123/api'
+    'http://homeassistant.local:8123/api'
   } else {
     if (is.null(ip)) {
       cli::cli_abort(c('No IP address provided.',
