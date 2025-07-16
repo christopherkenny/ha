@@ -1,3 +1,12 @@
+#' Check if the API is running
+#'
+#' @param ip `r template_var_ip()`
+#'
+#' @returns A list containing the API information.
+#' @export
+#'
+#' @examplesIf ha_has_key()
+#' ha_api()
 ha_api <- function(ip = NULL) {
 
   base_url <- api_url(local = is.null(ip), ip = ip)
@@ -10,5 +19,6 @@ ha_api <- function(ip = NULL) {
     )
 
   req |>
-    httr2::req_perform()
+    httr2::req_perform() |>
+    httr2::resp_body_json()
 }
