@@ -2,6 +2,7 @@
 
 export(ha_api)
 export(ha_api_config)
+export(ha_api_error_log)
 export(ha_api_events)
 export(ha_api_services)
 export(ha_api_states)
