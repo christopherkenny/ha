@@ -17,7 +17,11 @@ ha_api_error_log <- function(ip = NULL) {
       `Content-Type` = 'application/json'
     )
 
-  req |>
-    httr2::req_perform() |>
-    httr2::resp_body_json()
+  resp <- req |>
+    httr2::req_perform()
+
+  resp |>
+    httr2::resp_body_raw() |>
+    rawToChar() |>
+    strsplit('\n')
 }
