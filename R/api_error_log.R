@@ -6,8 +6,8 @@
 #' @export
 #'
 #' @examplesIf ha_has_key()
-#' ha_api_error_log()
-ha_api_error_log <- function(ip = NULL) {
+#' ha_get_error_log()
+ha_get_error_log <- function(ip = NULL) {
   base_url <- api_url(local = is.null(ip), ip = ip)
 
   req <- httr2::request(base_url = base_url) |>

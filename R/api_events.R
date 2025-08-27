@@ -6,8 +6,8 @@
 #' @export
 #'
 #' @examplesIf ha_has_key()
-#' ha_api_events()
-ha_api_events <- function(ip = NULL) {
+#' ha_get_events()
+ha_get_events <- function(ip = NULL) {
   base_url <- api_url(local = is.null(ip), ip = ip)
 
   req <- httr2::request(base_url = base_url) |>

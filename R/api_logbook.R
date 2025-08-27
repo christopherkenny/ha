@@ -7,8 +7,8 @@
 #' @export
 #'
 #' @examplesIf ha_has_key()
-#' ha_api_logbook()
-ha_api_logbook <- function(timestamp = NULL, ip = NULL) {
+#' ha_get_logbook()
+ha_get_logbook <- function(timestamp = NULL, ip = NULL) {
   base_url <- api_url(local = is.null(ip), ip = ip)
 
   req <- httr2::request(base_url = base_url) |>

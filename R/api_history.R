@@ -8,8 +8,8 @@
 #' @export
 #'
 #' @examplesIf ha_has_key()
-#' ha_api_history('update.home_assistant_core_update')
-ha_api_history <- function(entity_id, timestamp = NULL, ip = NULL) {
+#' ha_get_history('update.home_assistant_core_update')
+ha_get_history <- function(entity_id, timestamp = NULL, ip = NULL) {
 
   if (missing(entity_id)) {
     cli::cli_abort('Missing {.arg entity_id}, but an entity ID is required.')
