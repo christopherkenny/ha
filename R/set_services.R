@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examplesIf ha_has_key()
-#' ha_set_services('light.h6076'
+#' ha_set_services('light.h6076')
 ha_set_services <- function(domain, service, entity_id, ip = NULL) {
 
   if (missing(domain) || missing(service)) {

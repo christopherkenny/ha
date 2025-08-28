@@ -21,6 +21,6 @@ Set Home Assistant Services
 }
 \examples{
 \dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-ha_set_services('light.h6076'
+ha_set_services('light.h6076')
 \dontshow{\}) # examplesIf}
 }

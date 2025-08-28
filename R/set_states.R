@@ -13,9 +13,9 @@
 #'   attributes = list(version = '4.5.1'))
 ha_set_states <- function(entity_id, state, attributes = NULL, ip = NULL) {
 
-  if (missing(entity_id)) {
-    cli::cli_abort('Missing {.arg entity_id}, but an entity ID is required.')
-  }
+    if (missing(entity_id)) {
+      cli::cli_abort('Missing {.arg entity_id}, but an entity ID is required.')
+    }
 
   if (missing(state)) {
     cli::cli_abort('Missing {.arg state}, but a state is required.')
