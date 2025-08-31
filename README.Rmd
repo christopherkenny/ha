@@ -29,7 +29,7 @@ You can install the development version of `ha` from [GitHub](https://github.com
 pak::pak('christopherkenny/ha')
 ```
 
-## Example
+## Controlling your smart home
 
 This is a basic example which shows you how to solve a common problem:
 
