@@ -2,6 +2,7 @@
 #'
 #' @param domain `r template_var_domain()`
 #' @param service `r template_var_service()`
+#' @param entity_id `r template_var_entity_id()`
 #' @param ip `r template_var_ip()`
 #'
 #' @returns A list of changes made by the service call

@@ -10,6 +10,13 @@
 
 Provides tools to control smart home features via the API for 'Home Assistant' \url{https://developers.home-assistant.io/}. Allows for controlling states, services, and events. Supports configuring both local access and remote access.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://christophertkenny.com/ha/}
+}
+
+}
 \author{
 \strong{Maintainer}: Christopher T. Kenny \email{ctkenny@proton.me} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
 

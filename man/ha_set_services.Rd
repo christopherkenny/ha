@@ -11,6 +11,8 @@ ha_set_services(domain, service, entity_id, ip = NULL)
 
 \item{service}{A service name. For example, \code{turn_on} or \code{turn_off}.}
 
+\item{entity_id}{Entity ID. For example, \code{sensor.temperature}.}
+
 \item{ip}{IP address. Default is \code{NULL}, which uses the local host.}
 }
 \value{
