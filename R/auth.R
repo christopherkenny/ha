@@ -50,14 +50,14 @@ ha_set_key <- function(key, overwrite = FALSE, install = FALSE,
   names(key) <- name
 
   if (install) {
-
     if (is.null(r_env)) {
       r_env <- file.path(Sys.getenv('HOME'), '.Renviron')
       if (interactive()) {
-        utils::askYesNo(paste0('Install to',  r_env, '?'))
+        utils::askYesNo(paste0('Install to', r_env, '?'))
       } else {
         cli::cli_abort(c('No path set and not run interactively.',
-                         i = 'Rerun with {.arg r_env} set, possibly to {.file {r_env}}'))
+                         i = 'Rerun with {.arg r_env} set, possibly to {.file {r_env}}'
+        ))
       }
     }
 
@@ -68,7 +68,7 @@ ha_set_key <- function(key, overwrite = FALSE, install = FALSE,
     lines <- readLines(r_env)
     newline <- paste0(name, "='", key, "'")
 
-    exists <- stringr::str_detect(lines, paste0(name, '='))
+    exists <- grepl(x = lines, paste0(name, '='))
 
     if (any(exists)) {
       if (sum(exists) > 1) {
@@ -88,12 +88,6 @@ ha_set_key <- function(key, overwrite = FALSE, install = FALSE,
       do.call(Sys.setenv, key)
     }
   } else {
-
-    if (key == 'EXAMPLE-1234') {
-      cli::cli_message('You provided the example key. No key was set.')
-      return(invisible(key))
-    }
-
     do.call(Sys.setenv, key)
   }
 
