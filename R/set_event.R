@@ -1,4 +1,4 @@
-#' Set Home Assistant Services
+#' Set Home Assistant Events
 #'
 #' @param event_type The type of event to set, e.g. `light.turn_on`
 #' @param event_data Optional. A named list of data to send with the event.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/set_event.R
 \name{ha_set_event}
 \alias{ha_set_event}
-\title{Set Home Assistant Services}
+\title{Set Home Assistant Events}
 \usage{
 ha_set_event(event_type, event_data = NULL, ip = NULL)
 }
@@ -17,7 +17,7 @@ ha_set_event(event_type, event_data = NULL, ip = NULL)
 A vector of events fired with a confirmation or detailed information
 }
 \description{
-Set Home Assistant Services
+Set Home Assistant Events
 }
 \examples{
 \dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
