@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/christopherkenny/ha/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/ha/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `ha` is to control your smart home using HomeAssistant from
@@ -131,7 +132,139 @@ example, to toggle a light:
 
 ``` r
 ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
-#> list()
+#> [[1]]
+#> [[1]]$entity_id
+#> [1] "light.h6076"
+#> 
+#> [[1]]$state
+#> [1] "on"
+#> 
+#> [[1]]$attributes
+#> [[1]]$attributes$min_color_temp_kelvin
+#> [1] 2000
+#> 
+#> [[1]]$attributes$max_color_temp_kelvin
+#> [1] 9000
+#> 
+#> [[1]]$attributes$min_mireds
+#> [1] 111
+#> 
+#> [[1]]$attributes$max_mireds
+#> [1] 500
+#> 
+#> [[1]]$attributes$effect_list
+#> [[1]]$attributes$effect_list[[1]]
+#> [1] "none"
+#> 
+#> [[1]]$attributes$effect_list[[2]]
+#> [1] "sunrise"
+#> 
+#> [[1]]$attributes$effect_list[[3]]
+#> [1] "sunset"
+#> 
+#> [[1]]$attributes$effect_list[[4]]
+#> [1] "movie"
+#> 
+#> [[1]]$attributes$effect_list[[5]]
+#> [1] "dating"
+#> 
+#> [[1]]$attributes$effect_list[[6]]
+#> [1] "romantic"
+#> 
+#> [[1]]$attributes$effect_list[[7]]
+#> [1] "twinkle"
+#> 
+#> [[1]]$attributes$effect_list[[8]]
+#> [1] "candlelight"
+#> 
+#> [[1]]$attributes$effect_list[[9]]
+#> [1] "snowflake"
+#> 
+#> [[1]]$attributes$effect_list[[10]]
+#> [1] "energetic"
+#> 
+#> [[1]]$attributes$effect_list[[11]]
+#> [1] "breathe"
+#> 
+#> [[1]]$attributes$effect_list[[12]]
+#> [1] "crossing"
+#> 
+#> 
+#> [[1]]$attributes$supported_color_modes
+#> [[1]]$attributes$supported_color_modes[[1]]
+#> [1] "color_temp"
+#> 
+#> [[1]]$attributes$supported_color_modes[[2]]
+#> [1] "rgb"
+#> 
+#> 
+#> [[1]]$attributes$effect
+#> NULL
+#> 
+#> [[1]]$attributes$color_mode
+#> [1] "rgb"
+#> 
+#> [[1]]$attributes$brightness
+#> [1] 255
+#> 
+#> [[1]]$attributes$color_temp_kelvin
+#> NULL
+#> 
+#> [[1]]$attributes$color_temp
+#> NULL
+#> 
+#> [[1]]$attributes$hs_color
+#> [[1]]$attributes$hs_color[[1]]
+#> [1] 240
+#> 
+#> [[1]]$attributes$hs_color[[2]]
+#> [1] 100
+#> 
+#> 
+#> [[1]]$attributes$rgb_color
+#> [[1]]$attributes$rgb_color[[1]]
+#> [1] 0
+#> 
+#> [[1]]$attributes$rgb_color[[2]]
+#> [1] 0
+#> 
+#> [[1]]$attributes$rgb_color[[3]]
+#> [1] 255
+#> 
+#> 
+#> [[1]]$attributes$xy_color
+#> [[1]]$attributes$xy_color[[1]]
+#> [1] 0.136
+#> 
+#> [[1]]$attributes$xy_color[[2]]
+#> [1] 0.04
+#> 
+#> 
+#> [[1]]$attributes$friendly_name
+#> [1] "H6076"
+#> 
+#> [[1]]$attributes$supported_features
+#> [1] 4
+#> 
+#> 
+#> [[1]]$last_changed
+#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> 
+#> [[1]]$last_reported
+#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> 
+#> [[1]]$last_updated
+#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> 
+#> [[1]]$context
+#> [[1]]$context$id
+#> [1] "01K499723GYJN7J7W7X3NAK9TM"
+#> 
+#> [[1]]$context$parent_id
+#> NULL
+#> 
+#> [[1]]$context$user_id
+#> [1] "3acbda1387d24cbaab1c2d638f189f45"
 ```
 
 (Beware, when I run this on my own network, it turns on a light on, so
@@ -237,17 +370,17 @@ ha_set_services('light', 'turn_off', entity_id = 'light.h6076')
 #> 
 #> 
 #> [[1]]$last_changed
-#> [1] "2025-09-04T02:32:18.001315+00:00"
+#> [1] "2025-09-04T02:34:42.730312+00:00"
 #> 
 #> [[1]]$last_reported
-#> [1] "2025-09-04T02:32:18.001315+00:00"
+#> [1] "2025-09-04T02:34:42.730312+00:00"
 #> 
 #> [[1]]$last_updated
-#> [1] "2025-09-04T02:32:18.001315+00:00"
+#> [1] "2025-09-04T02:34:42.730312+00:00"
 #> 
 #> [[1]]$context
 #> [[1]]$context$id
-#> [1] "01K4992MTFZ4C7JED27Z42K9PW"
+#> [1] "01K49972586A8XZW2JFZ06GHY9"
 #> 
 #> [[1]]$context$parent_id
 #> NULL

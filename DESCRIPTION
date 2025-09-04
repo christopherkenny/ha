@@ -18,3 +18,4 @@ RoxygenNote: 7.3.2
 Imports: 
     cli,
     httr2
+URL: http://christophertkenny.com/ha/
