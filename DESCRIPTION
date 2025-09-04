@@ -18,6 +18,5 @@ RoxygenNote: 7.3.2
 Imports: 
     cli,
     httr2,
-    purrr,
-    stringr
+    purrr
 URL: http://christophertkenny.com/ha/
