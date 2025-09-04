@@ -13,12 +13,7 @@
 ha_set_services <- function(domain, service, entity_id, ip = NULL) {
 
   if (missing(domain) || missing(service)) {
-    cli::cli_abort(
-      c(
-        'Both {.code domain} and {.code service} must be provided.',
-        i = 'Example: {.code ha_set_services("light", "turn_on")}.'
-      )
-    )
+    cli::cli_abort('Both {.code domain} and {.code service} must be provided.')
   }
 
   if (missing(entity_id)) {
