@@ -49,6 +49,11 @@ ha_set_key <- function(key, overwrite = FALSE, install = FALSE,
   key <- list(key)
   names(key) <- name
 
+  if (key == 'EXAMPLE-1234') {
+    cli::cli_inform('Example key. Returning without setting.')
+    return(invisible(key))
+  }
+
   if (install) {
     if (is.null(r_env)) {
       r_env <- file.path(Sys.getenv('HOME'), '.Renviron')
