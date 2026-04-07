@@ -18,7 +18,7 @@ A list containing a confirmation message.
 Remove Home Assistant State
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_set_states('rpkg.test', 'on')
 ha_delete_states('rpkg.test')
 \dontshow{\}) # examplesIf}

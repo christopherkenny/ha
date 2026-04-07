@@ -16,7 +16,7 @@ A list containing the Home Assistant configuration check result.
 Get Home Assistant configuration validity
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_check_config()
 \dontshow{\}) # examplesIf}
 }

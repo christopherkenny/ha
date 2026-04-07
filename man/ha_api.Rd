@@ -16,7 +16,7 @@ A list containing the API information.
 Check if the API is running
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_api()
 \dontshow{\}) # examplesIf}
 }

@@ -2,7 +2,7 @@
 #'
 #' @param ip `r template_var_ip()`
 #'
-#' @returns A list containing the Home Assistant error log
+#' @returns A character vector containing the Home Assistant error log.
 #' @export
 #'
 #' @examplesIf ha_has_key()

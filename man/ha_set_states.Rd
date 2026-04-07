@@ -22,7 +22,7 @@ a list of information on the new or updated state
 Set Home Assistant State
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_set_states(entity_id = 'rpkg.test', state = 'on',
   attributes = list(version = '4.5.1'))
 \dontshow{\}) # examplesIf}

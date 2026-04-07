@@ -10,13 +10,13 @@ ha_get_services(ip = NULL)
 \item{ip}{IP address. Default is \code{NULL}, which uses the local host.}
 }
 \value{
-A list containing the Home Assistant configuration.
+A list containing Home Assistant service information.
 }
 \description{
 Retrieve Home Assistant Services
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_get_services()
 \dontshow{\}) # examplesIf}
 }

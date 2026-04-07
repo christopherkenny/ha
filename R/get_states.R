@@ -3,7 +3,7 @@
 #' @param entity_id Optional. `r template_var_entity_id()`
 #' @param ip `r template_var_ip()`
 #'
-#' @returns A list containing the Home Assistant configuration.
+#' @returns A list containing Home Assistant state information.
 #' @export
 #'
 #' @examplesIf ha_has_key()

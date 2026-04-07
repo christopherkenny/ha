@@ -4,7 +4,7 @@
 #' @param timestamp Optional. `r template_var_timestamp()`
 #' @param ip `r template_var_ip()`
 #'
-#' @returns A list containing the Home Assistant configuration.
+#' @returns A list containing Home Assistant history entries.
 #' @export
 #'
 #' @examplesIf ha_has_key()

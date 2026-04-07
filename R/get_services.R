@@ -2,7 +2,7 @@
 #'
 #' @param ip `r template_var_ip()`
 #'
-#' @returns A list containing the Home Assistant configuration.
+#' @returns A list containing Home Assistant service information.
 #' @export
 #'
 #' @examplesIf ha_has_key()

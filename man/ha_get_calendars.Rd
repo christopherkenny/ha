@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_calendar.R
 \name{ha_get_calendars}
 \alias{ha_get_calendars}
-\title{Retrieve Home Assistant calendar}
+\title{Retrieve Home Assistant calendars}
 \usage{
 ha_get_calendars(ip = NULL)
 }
@@ -10,13 +10,13 @@ ha_get_calendars(ip = NULL)
 \item{ip}{IP address. Default is \code{NULL}, which uses the local host.}
 }
 \value{
-A list containing the Home Assistant calendar.
+A list containing Home Assistant calendar information.
 }
 \description{
-Retrieve Home Assistant calendar
+Retrieve Home Assistant calendars
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_get_calendars()
 \dontshow{\}) # examplesIf}
 }

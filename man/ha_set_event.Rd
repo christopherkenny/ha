@@ -20,7 +20,7 @@ A vector of events fired with a confirmation or detailed information
 Set Home Assistant Events
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_set_event('light.test')
 \dontshow{\}) # examplesIf}
 }

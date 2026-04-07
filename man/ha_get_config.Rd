@@ -16,7 +16,7 @@ A list containing the Home Assistant configuration.
 Retrieve Home Assistant Configuration
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_get_config()
 \dontshow{\}) # examplesIf}
 }

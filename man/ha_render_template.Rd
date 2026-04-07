@@ -18,7 +18,7 @@ A length one character vector containing the rendered template
 Render a Home Assistant Template
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_render_template("My living room light is {{ states('light.h6076') }}.")
 \dontshow{\}) # examplesIf}
 }

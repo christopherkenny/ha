@@ -74,19 +74,19 @@ ha_get_states()[[1]]
 #> [1] 0
 #> 
 #> $attributes$installed_version
-#> [1] "2025.08.3"
+#> [1] "2026.03.2"
 #> 
 #> $attributes$in_progress
 #> [1] FALSE
 #> 
 #> $attributes$latest_version
-#> [1] "2025.08.3"
+#> [1] "2026.03.2"
 #> 
 #> $attributes$release_summary
 #> NULL
 #> 
 #> $attributes$release_url
-#> [1] "https://github.com/home-assistant/supervisor/releases/tag/2025.08.3"
+#> [1] "https://github.com/home-assistant/supervisor/releases/tag/2026.03.2"
 #> 
 #> $attributes$skipped_version
 #> NULL
@@ -98,7 +98,7 @@ ha_get_states()[[1]]
 #> NULL
 #> 
 #> $attributes$entity_picture
-#> [1] "https://brands.home-assistant.io/hassio/icon.png"
+#> [1] "/api/brands/integration/hassio/icon.png?placeholder=no"
 #> 
 #> $attributes$friendly_name
 #> [1] "Home Assistant Supervisor Update"
@@ -108,17 +108,17 @@ ha_get_states()[[1]]
 #> 
 #> 
 #> $last_changed
-#> [1] "2025-09-04T01:48:03.742894+00:00"
+#> [1] "2026-04-07T00:20:39.316717+00:00"
 #> 
 #> $last_reported
-#> [1] "2025-09-04T01:48:03.742894+00:00"
+#> [1] "2026-04-07T00:20:39.316717+00:00"
 #> 
 #> $last_updated
-#> [1] "2025-09-04T01:48:03.742894+00:00"
+#> [1] "2026-04-07T00:20:39.316717+00:00"
 #> 
 #> $context
 #> $context$id
-#> [1] "01K496HMRY33DK2278FNP0Y8PX"
+#> [1] "01KNJN048MG1D8500PS0S8HT6B"
 #> 
 #> $context$parent_id
 #> NULL
@@ -146,12 +146,6 @@ ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 #> [[1]]$attributes$max_color_temp_kelvin
 #> [1] 9000
 #> 
-#> [[1]]$attributes$min_mireds
-#> [1] 111
-#> 
-#> [[1]]$attributes$max_mireds
-#> [1] 500
-#> 
 #> [[1]]$attributes$effect_list
 #> [[1]]$attributes$effect_list[[1]]
 #> [1] "none"
@@ -210,23 +204,20 @@ ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 #> [[1]]$attributes$color_temp_kelvin
 #> NULL
 #> 
-#> [[1]]$attributes$color_temp
-#> NULL
-#> 
 #> [[1]]$attributes$hs_color
 #> [[1]]$attributes$hs_color[[1]]
-#> [1] 240
+#> [1] 0
 #> 
 #> [[1]]$attributes$hs_color[[2]]
-#> [1] 100
+#> [1] 0
 #> 
 #> 
 #> [[1]]$attributes$rgb_color
 #> [[1]]$attributes$rgb_color[[1]]
-#> [1] 0
+#> [1] 255
 #> 
 #> [[1]]$attributes$rgb_color[[2]]
-#> [1] 0
+#> [1] 255
 #> 
 #> [[1]]$attributes$rgb_color[[3]]
 #> [1] 255
@@ -234,10 +225,10 @@ ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 #> 
 #> [[1]]$attributes$xy_color
 #> [[1]]$attributes$xy_color[[1]]
-#> [1] 0.136
+#> [1] 0.323
 #> 
 #> [[1]]$attributes$xy_color[[2]]
-#> [1] 0.04
+#> [1] 0.329
 #> 
 #> 
 #> [[1]]$attributes$friendly_name
@@ -248,17 +239,17 @@ ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 #> 
 #> 
 #> [[1]]$last_changed
-#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> [1] "2026-04-07T00:57:14.121917+00:00"
 #> 
 #> [[1]]$last_reported
-#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> [1] "2026-04-07T00:57:14.121917+00:00"
 #> 
 #> [[1]]$last_updated
-#> [1] "2025-09-04T02:34:42.674902+00:00"
+#> [1] "2026-04-07T00:57:14.121917+00:00"
 #> 
 #> [[1]]$context
 #> [[1]]$context$id
-#> [1] "01K499723GYJN7J7W7X3NAK9TM"
+#> [1] "01KNJQ33M54JB4RWTVAKM5G71C"
 #> 
 #> [[1]]$context$parent_id
 #> NULL
@@ -286,12 +277,6 @@ ha_set_services('light', 'turn_off', entity_id = 'light.h6076')
 #> [[1]]$attributes$max_color_temp_kelvin
 #> [1] 9000
 #> 
-#> [[1]]$attributes$min_mireds
-#> [1] 111
-#> 
-#> [[1]]$attributes$max_mireds
-#> [1] 500
-#> 
 #> [[1]]$attributes$effect_list
 #> [[1]]$attributes$effect_list[[1]]
 #> [1] "none"
@@ -350,9 +335,6 @@ ha_set_services('light', 'turn_off', entity_id = 'light.h6076')
 #> [[1]]$attributes$color_temp_kelvin
 #> NULL
 #> 
-#> [[1]]$attributes$color_temp
-#> NULL
-#> 
 #> [[1]]$attributes$hs_color
 #> NULL
 #> 
@@ -370,17 +352,17 @@ ha_set_services('light', 'turn_off', entity_id = 'light.h6076')
 #> 
 #> 
 #> [[1]]$last_changed
-#> [1] "2025-09-04T02:34:42.730312+00:00"
+#> [1] "2026-04-07T00:57:14.154206+00:00"
 #> 
 #> [[1]]$last_reported
-#> [1] "2025-09-04T02:34:42.730312+00:00"
+#> [1] "2026-04-07T00:57:14.154206+00:00"
 #> 
 #> [[1]]$last_updated
-#> [1] "2025-09-04T02:34:42.730312+00:00"
+#> [1] "2026-04-07T00:57:14.154206+00:00"
 #> 
 #> [[1]]$context
 #> [[1]]$context$id
-#> [1] "01K49972586A8XZW2JFZ06GHY9"
+#> [1] "01KNJQ33N70VYQ7WV089DHK7T4"
 #> 
 #> [[1]]$context$parent_id
 #> NULL
@@ -409,8 +391,8 @@ here](https://developers.home-assistant.io/docs/api/rest/).
   `get /api/calendars/<calendar entity_id>?start=<timestamp>&end=<timestamp>`
 - `ha_set_states()`: `post /api/states/<entity_id>`
 - `ha_set_event()`: `post /api/events/<event_type>`
-- `ha_set_service()`: `post /api/services/<domain>/<service>`
+- `ha_set_services()`: `post /api/services/<domain>/<service>`
 - `ha_render_template()`: `post /api/template`
 - `ha_check_config()`: `post /api/config/core/check_config`
 - `ha_set_intent()`: `post /api/intent/handle`
-- `ha_delete_states():`delete /api/states/<entity_id>\`
+- `ha_delete_states()`: `delete /api/states/<entity_id>`

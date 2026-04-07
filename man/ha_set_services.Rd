@@ -22,7 +22,7 @@ A list of changes made by the service call
 Set Home Assistant Services
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_set_services('light', 'turn_off', 'light.h6076')
 \dontshow{\}) # examplesIf}
 }

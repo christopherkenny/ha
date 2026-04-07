@@ -20,7 +20,7 @@ are not enabled by default. Using these without enabling them will
 create an error.
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_set_intent(list(name = 'SetTimer', data = list(seconds = '30')))
 \dontshow{\}) # examplesIf}
 }

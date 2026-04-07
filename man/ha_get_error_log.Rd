@@ -10,13 +10,13 @@ ha_get_error_log(ip = NULL)
 \item{ip}{IP address. Default is \code{NULL}, which uses the local host.}
 }
 \value{
-A list containing the Home Assistant error log
+A character vector containing the Home Assistant error log.
 }
 \description{
 Retrieve Home Assistant Error Log
 }
 \examples{
-\dontshow{if (ha_has_key()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (ha_has_key()) withAutoprint(\{ # examplesIf}
 ha_get_error_log()
 \dontshow{\}) # examplesIf}
 }

@@ -1,8 +1,8 @@
-#' Retrieve Home Assistant calendar
+#' Retrieve Home Assistant calendars
 #'
 #' @param ip `r template_var_ip()`
 #'
-#' @returns A list containing the Home Assistant calendar.
+#' @returns A list containing Home Assistant calendar information.
 #' @export
 #'
 #' @examplesIf ha_has_key()

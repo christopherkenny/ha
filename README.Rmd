@@ -98,8 +98,8 @@ The full list of API endpoints and their descriptions are [available here](https
 - TBD: `get /api/calendars/<calendar entity_id>?start=<timestamp>&end=<timestamp>`
 - `ha_set_states()`: `post /api/states/<entity_id>`
 - `ha_set_event()`: `post /api/events/<event_type>`
-- `ha_set_service()`: `post /api/services/<domain>/<service>`
+- `ha_set_services()`: `post /api/services/<domain>/<service>`
 - `ha_render_template()`: `post /api/template`
 - `ha_check_config()`: `post /api/config/core/check_config`
 - `ha_set_intent()`: `post /api/intent/handle`
-- `ha_delete_states(): `delete /api/states/<entity_id>`
+- `ha_delete_states()`: `delete /api/states/<entity_id>`

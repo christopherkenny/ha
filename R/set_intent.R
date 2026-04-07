@@ -15,7 +15,7 @@
 ha_set_intent <- function(intent, ip = NULL) {
 
   if (missing(intent)) {
-    cli::cli_abort('Missing {.arg intent}, but intent  is required.')
+    cli::cli_abort('Missing {.arg intent}, but an intent is required.')
   }
 
   base_url <- api_url(local = is.null(ip), ip = ip)
