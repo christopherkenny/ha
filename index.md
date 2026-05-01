@@ -9,6 +9,7 @@ You can install the development version of `ha` from
 [GitHub](https://github.com/christopherkenny/ha) with:
 
 ``` r
+
 # install.packages('pak')
 pak::pak('christopherkenny/ha')
 ```
@@ -16,6 +17,7 @@ pak::pak('christopherkenny/ha')
 ## Controlling your smart home
 
 ``` r
+
 library(ha)
 ```
 
@@ -37,6 +39,7 @@ creating a new long-lived access token.
 Then, setup your key.
 
 ``` r
+
 ha_set_key('YOUR_LONG_LIVED_ACCESS_TOKEN', install = TRUE)
 ```
 
@@ -45,6 +48,7 @@ To check that this is configured correctly, use the simple
 function:
 
 ``` r
+
 ha_api()
 #> $message
 #> [1] "API running."
@@ -54,6 +58,7 @@ From there, you can perform any of the available API calls, such as
 states, events, or services. For example, to get states:
 
 ``` r
+
 ha_get_states()[[1]]
 #> $entity_id
 #> [1] "update.home_assistant_supervisor_update"
@@ -126,6 +131,7 @@ Once you have devices connected, you can interact with them. For
 example, to toggle a light:
 
 ``` r
+
 ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 #> [[1]]
 #> [[1]]$entity_id
@@ -257,6 +263,7 @@ ha_set_services('light', 'turn_on', entity_id = 'light.h6076')
 let’s turn it off again!)
 
 ``` r
+
 ha_set_services('light', 'turn_off', entity_id = 'light.h6076')
 #> [[1]]
 #> [[1]]$entity_id
